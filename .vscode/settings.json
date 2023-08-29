@@ -74,6 +74,9 @@
         "functional": "cpp",
         "iterator": "cpp",
         "__verbose_abort": "cpp",
-        "bit": "cpp"
+        "bit": "cpp",
+        "fstream": "cpp",
+        "iomanip": "cpp",
+        "filesystem": "cpp"
     }
 }

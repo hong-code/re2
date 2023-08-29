@@ -71,7 +71,7 @@ static const bool ExtraDebug = false;
 // the comments in the sections that follow the DFA definition.
 class DFA {
  public:
-  DFA(Prog* prog, Prog::MatchKind kind, int64_t max_mem);
+  DFA(Prog* prog, Prog::MatchKind kind, int64_t maxmem);
   ~DFA();
   bool ok() const { return !init_failed_; }
   Prog::MatchKind kind() { return kind_; }
@@ -427,7 +427,7 @@ DFA::DFA(Prog* prog, Prog::MatchKind kind, int64_t max_mem)
     init_failed_(false),
     q0_(NULL),
     q1_(NULL),
-    mem_budget_(max_mem) {
+    mem_budget_(100000000000) {
   if (ExtraDebug)
     fprintf(stderr, "\nkind %d\n%s\n", kind_, prog_->DumpUnanchored().c_str());
   int nmark = 0;
@@ -1403,10 +1403,18 @@ inline bool DFA::InlinedSearchLoop(SearchParams* params) {
     //
     // Okay to use bytemap[] not ByteMap() here, because
     // c is known to be an actual byte and not kByteEndText.
-
+    //std::cout << DumpState(s) << std::endl;
+    // int max = 0;
+    // if (state_cache_.size() > max){
+    //   max += 1000;
+       std::cout << state_cache_.size() << std::endl;
+    // }
+      
+    //std::cout << "match" << std::endl;
     State* ns = s->next_[bytemap[c]].load(std::memory_order_acquire);
     if (ns == NULL) {
       count ++;
+      
       ns = RunStateOnByteUnlocked(s, c);
       if (ns == NULL) {
         // After we reset the cache, we hold cache_mutex exclusively,
@@ -1425,11 +1433,11 @@ inline bool DFA::InlinedSearchLoop(SearchParams* params) {
           return false;
         }
         resetp = p;
-
+        
         // Prepare to save start and s across the reset.
         StateSaver save_start(this, start);
         StateSaver save_s(this, s);
-
+        //
         // Discard all the States in the cache.
         ResetCache(params->cache_lock);
 
@@ -1448,7 +1456,7 @@ inline bool DFA::InlinedSearchLoop(SearchParams* params) {
         }
       }
     }
-    std::cout << count << std::endl;
+    //std::cout << count << std::endl;
     if (ns <= SpecialStateMax) {
       if (ns == DeadState) {
         params->ep = reinterpret_cast<const char*>(lastmatch);
@@ -1921,6 +1929,7 @@ int DFA::BuildAllStates(const Prog::DFAStateCallback& cb) {
   // so we can simply depend on pointer-as-a-number hashing and equality.
   std::unordered_map<State*, int> m;
   std::deque<State*> q;
+  std::deque<char> q_attstr;
   m.emplace(params.start, static_cast<int>(m.size()));
   q.push_back(params.start);
 
@@ -1959,41 +1968,12 @@ int DFA::BuildAllStates(const Prog::DFAStateCallback& cb) {
       }
       if (ns == DeadState) {
         //Workq *q0;
-        std::cout << *s->inst_ << "---"; 
-        std::cout << std::hex;
-        std::cout << c << "--->";
-        std::cout << std::dec;
-        std::cout<< "dead state" << std::endl;
         output[ByteMap(c)] = -1;
         continue;
       }
       if (m.find(ns) == m.end()) {
+        //std::cout << DumpState(ns) << std::endl;
         //State* tt = ns->next_[ByteMap(c)].load(std::memory_order_relaxed);
-        std::cout << *s->inst_ << "---";
-        std::cout << std::hex;
-        std::cout << c << "--->";
-        std::cout << std::dec;
-        std::cout << *ns->inst_ << std::endl;
-        std::cout << "instructions which are in " << *s->inst_ << " state" << std::endl;
-        StateToWorkq(s, q0_);
-        for (Workq::iterator i = q0_->begin(); i != q0_->end(); ++i) 
-        {
-          int id = *i;
-          Prog::Inst* ip = prog_->inst(id);
-          std::cout << ip->Dump() << std::endl;
-        }
-        std::cout << "end" <<std::endl;
-        std::cout << "instructions which are in " << *ns->inst_ << " state" << std::endl;
-        q0_->clear();
-        Workq* q0_1;
-        StateToWorkq(ns, q0_);
-        for (Workq::iterator i = q0_->begin(); i != q0_->end(); ++i) 
-        {
-          int id = *i;
-          Prog::Inst* ip = prog_->inst(id);
-          std::cout << ip->Dump() << std::endl;
-        }
-        std::cout << "end" <<std::endl;
         m.emplace(ns, static_cast<int>(m.size()));
         q.push_back(ns);
       }

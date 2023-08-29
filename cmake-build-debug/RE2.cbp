@@ -1,0 +1,1446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="RE2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="regexp_benchmark">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/regexp_benchmark" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 regexp_benchmark"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="regexp_benchmark/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/regexp_benchmark" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 regexp_benchmark/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="random_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/random_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 random_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="random_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/random_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 random_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exhaustive1_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/exhaustive1_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 exhaustive1_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exhaustive1_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/exhaustive1_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 exhaustive1_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="string_generator_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/string_generator_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 string_generator_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="string_generator_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/string_generator_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 string_generator_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simplify_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/simplify_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 simplify_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simplify_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/simplify_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 simplify_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="set_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/set_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 set_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="set_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/set_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 set_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="search_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/search_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 search_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="search_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/search_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 search_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="regexp_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/regexp_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 regexp_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="regexp_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/regexp_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 regexp_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="re2_arg_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/re2_arg_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 re2_arg_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="re2_arg_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/re2_arg_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 re2_arg_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="possible_match_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/possible_match_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 possible_match_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="possible_match_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/possible_match_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 possible_match_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mimics_pcre_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/mimics_pcre_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 mimics_pcre_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mimics_pcre_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/mimics_pcre_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 mimics_pcre_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="charclass_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/charclass_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 charclass_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="charclass_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/charclass_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 charclass_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="re2_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/re2_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 re2_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="re2_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/re2_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 re2_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="parse_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/parse_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 parse_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="parse_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/parse_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 parse_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="filtered_re2_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/filtered_re2_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 filtered_re2_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="filtered_re2_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/filtered_re2_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 filtered_re2_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exhaustive3_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/exhaustive3_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 exhaustive3_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exhaustive3_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/exhaustive3_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 exhaustive3_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exhaustive2_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/exhaustive2_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 exhaustive2_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exhaustive2_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/exhaustive2_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 exhaustive2_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dfa_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/dfa_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 dfa_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dfa_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/dfa_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 dfa_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="required_prefix_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/required_prefix_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 required_prefix_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="required_prefix_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/required_prefix_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 required_prefix_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Experimental">
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 Experimental"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Continuous">
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 Continuous"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Nightly">
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 Nightly"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exhaustive_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/exhaustive_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 exhaustive_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="exhaustive_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/exhaustive_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 exhaustive_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="compile_test">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/compile_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 compile_test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="compile_test/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/compile_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 compile_test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testing">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/libtesting.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 testing"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testing/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/libtesting.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 testing/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="re2">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/libre2.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 re2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="re2/fast">
+				<Option output="/home/huangh/re2-main/cmake-build-debug/libre2.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/huangh/re2-main/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/huangh/re2-main"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 re2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/huangh/re2-main/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/huangh/re2-main/re2/bitmap256.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/bitmap256.h">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/bitstate.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/compile.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/dfa.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/filtered_re2.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/filtered_re2.h">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/mimics_pcre.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/nfa.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/onepass.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/parse.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/perl_groups.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/prefilter.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/prefilter.h">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/prefilter_tree.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/prefilter_tree.h">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/prog.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/prog.h">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/re2.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/re2.h">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/regexp.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/regexp.h">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/set.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/set.h">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/simplify.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/stringpiece.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/stringpiece.h">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/backtrack.cc">
+			<Option target="testing"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/charclass_test.cc">
+			<Option target="charclass_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/compile_test.cc">
+			<Option target="compile_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/dfa_test.cc">
+			<Option target="dfa_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/dump.cc">
+			<Option target="testing"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/exhaustive1_test.cc">
+			<Option target="exhaustive1_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/exhaustive2_test.cc">
+			<Option target="exhaustive2_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/exhaustive3_test.cc">
+			<Option target="exhaustive3_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/exhaustive_test.cc">
+			<Option target="exhaustive_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/exhaustive_tester.cc">
+			<Option target="testing"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/exhaustive_tester.h">
+			<Option target="testing"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/filtered_re2_test.cc">
+			<Option target="filtered_re2_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/mimics_pcre_test.cc">
+			<Option target="mimics_pcre_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/null_walker.cc">
+			<Option target="testing"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/parse_test.cc">
+			<Option target="parse_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/possible_match_test.cc">
+			<Option target="possible_match_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/random_test.cc">
+			<Option target="random_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/re2_arg_test.cc">
+			<Option target="re2_arg_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/re2_test.cc">
+			<Option target="re2_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/regexp_benchmark.cc">
+			<Option target="regexp_benchmark"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/regexp_generator.cc">
+			<Option target="testing"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/regexp_generator.h">
+			<Option target="testing"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/regexp_test.cc">
+			<Option target="regexp_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/required_prefix_test.cc">
+			<Option target="required_prefix_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/search_test.cc">
+			<Option target="search_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/set_test.cc">
+			<Option target="set_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/simplify_test.cc">
+			<Option target="simplify_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/string_generator.cc">
+			<Option target="testing"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/string_generator.h">
+			<Option target="testing"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/string_generator_test.cc">
+			<Option target="string_generator_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/tester.cc">
+			<Option target="testing"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/testing/tester.h">
+			<Option target="testing"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/tostring.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/unicode_casefold.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/unicode_casefold.h">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/unicode_groups.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2/unicode_groups.h">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/util/benchmark.cc">
+			<Option target="regexp_benchmark"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/util/benchmark.h">
+			<Option target="regexp_benchmark"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/util/pcre.cc">
+			<Option target="testing"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/util/pcre.h">
+			<Option target="testing"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/util/rune.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/util/strutil.cc">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/util/strutil.h">
+			<Option target="re2"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/util/test.cc">
+			<Option target="random_test"/>
+			<Option target="exhaustive1_test"/>
+			<Option target="string_generator_test"/>
+			<Option target="simplify_test"/>
+			<Option target="set_test"/>
+			<Option target="search_test"/>
+			<Option target="regexp_test"/>
+			<Option target="re2_arg_test"/>
+			<Option target="possible_match_test"/>
+			<Option target="mimics_pcre_test"/>
+			<Option target="charclass_test"/>
+			<Option target="re2_test"/>
+			<Option target="parse_test"/>
+			<Option target="filtered_re2_test"/>
+			<Option target="exhaustive3_test"/>
+			<Option target="exhaustive2_test"/>
+			<Option target="dfa_test"/>
+			<Option target="required_prefix_test"/>
+			<Option target="exhaustive_test"/>
+			<Option target="compile_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/util/test.h">
+			<Option target="random_test"/>
+			<Option target="exhaustive1_test"/>
+			<Option target="string_generator_test"/>
+			<Option target="simplify_test"/>
+			<Option target="set_test"/>
+			<Option target="search_test"/>
+			<Option target="regexp_test"/>
+			<Option target="re2_arg_test"/>
+			<Option target="possible_match_test"/>
+			<Option target="mimics_pcre_test"/>
+			<Option target="charclass_test"/>
+			<Option target="re2_test"/>
+			<Option target="parse_test"/>
+			<Option target="filtered_re2_test"/>
+			<Option target="exhaustive3_test"/>
+			<Option target="exhaustive2_test"/>
+			<Option target="dfa_test"/>
+			<Option target="required_prefix_test"/>
+			<Option target="exhaustive_test"/>
+			<Option target="compile_test"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2.pc.in">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/huangh/re2-main/re2Config.cmake.in">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

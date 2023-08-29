@@ -1118,8 +1118,8 @@ Prog* Compiler::Compile(Regexp* re, bool reversed, int64_t max_mem) {
   Regexp* sre = re->Simplify();
   if (sre == NULL)
     return NULL;
-  std::cout << "simplify regex" << std::endl;
-  std::cout << sre->ToString() << std::endl;
+//  std::cout << "simplify regex" << std::endl;
+//  std::cout << sre->ToString() << std::endl;
   // Record whether prog is anchored, removing the anchors.
   // (They get in the way of other optimizations.)
   bool is_anchor_start = IsAnchorStart(&sre, 0);
