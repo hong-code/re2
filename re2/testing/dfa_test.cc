@@ -77,7 +77,7 @@ TEST(Multithreaded, BuildEntireDFA) {
   //s = "b[ab]{10}";
   //s = "%[^\x0d\x0a]{1000}";
   std::cout << s << std::endl;
-  Regexp* re = Regexp::Parse(s, Regexp::LikePerl, NULL);
+  Regexp* re = re2::Regexp::Parse(s, Regexp::LikePerl, NULL);
   re->Simplify();
   std::cout << re->Dump() << std::endl;
   ASSERT_TRUE(re != NULL); 
@@ -88,12 +88,12 @@ TEST(Multithreaded, BuildEntireDFA) {
     std::cout << "NFA" << std::endl;
     //std::cout << prog->DumpByteMap() << std::endl;
     int n = 10;
-/*    std::ifstream outfile;
+    std::ifstream outfile;
     std::string line;
     char ch, ch1;
     struct dirent *ptr;
     DIR *dir;
-    std::string PATH = "/home/huangh/re2-clion/attack_text/Redos_list";
+    std::string PATH = "/home/huangh/PureEvilTxTGen/attack_PureEvil100000above20_text/Redos_list";
     dir=opendir(PATH.c_str());
     std::vector<std::string> files;
     std::cout << "文件列表: "<< std::endl;
@@ -105,10 +105,10 @@ TEST(Multithreaded, BuildEntireDFA) {
     }
     closedir(dir);
     std::ofstream result;
-    result.open("/home/huangh/re2-clion/result/snort_in_re2_0816.txt");
-    int above10s = 0, above5s = 0, above1s = 0, above20s = 0, regex_nun = 0;
+    result.open("/home/huangh/PureEvilTxTGen/result/snort_in_re2_0911.txt");
+    int above10s = 0, above5s = 0, above1s = 0, above20s = 0, regex_nun = 0, above50s = 0, above80s = 0, above100s = 0;
     for (auto& i : files) {
-      std::ifstream in_regex("/home/huangh/re2-clion/attack_text/Redos_list/" + i);
+      std::ifstream in_regex("/home/huangh/PureEvilTxTGen/attack_PureEvil100000above20_text/Redos_list/" + i);
       if (!in_regex)
         std::cout << "open error" << std::endl;
       std::string regex_text;
@@ -116,11 +116,6 @@ TEST(Multithreaded, BuildEntireDFA) {
       getline(in_regex, regex_name);
       getline(in_regex, regex_text);
       in_regex.close();
-      std::ofstream result_1;
-      result_1.open("/home/huangh/re2-clion/attack_text_mac/Redos_list/" + i);
-      result_1 << regex_name << "\n";
-      result_1 << "/Users/huanghong/Desktop/git/re2-clion/re2-clion/attack_text/" + i  ;
-      result_1.close();
       std::ifstream in(regex_text);
       std::istreambuf_iterator<char> begin1(in);
       std::istreambuf_iterator<char> end1;
@@ -152,7 +147,16 @@ TEST(Multithreaded, BuildEntireDFA) {
           if (duration_s.count() >= 5){
               if (duration_s.count() >= 10){
                   if (duration_s.count() >= 20){
-                      above20s++;
+                      if (duration_s.count() >= 50)
+                          if (duration_s.count() >= 80){
+                              if (duration_s.count() >= 100)
+                                  above100s++;
+                              else
+                                above80s++;
+                          } else
+                            above50s++;
+                      else
+                        above20s++;
                   } else
                       above10s++;
               } else
@@ -171,10 +175,14 @@ TEST(Multithreaded, BuildEntireDFA) {
     std::cout << "higher than 1s lower than 5s : " << above1s << std::endl;
     std::cout << "higher than 5s lower than 10s : " << above5s << std::endl;
     std::cout << "higher than 10s lower than 20s : " << above10s << std::endl;
-    std::cout << "higher than 20s : " << above20s << std::endl;
+    std::cout << "higher than 20s lower than 50s: " << above20s << std::endl;
+    std::cout << "higher than 50s lower than 80s: " << above50s << std::endl;
+    std::cout << "higher than 80s lower than 100s: " << above80s << std::endl;
+    std::cout << "higher than 100s: " << above100s << std::endl;
     std::cout << "regex num : " << regex_nun << std::endl;
-    result.close();*/
-	   std::ifstream in("/Users/huanghong/Desktop/git/re2-clion/re2-clion/cmake-build-debug/test.txt");
+    result.close();
+//begin
+	  /* std::ifstream in("/Users/huanghong/Desktop/git/output.txt");
      if (!in)
        std::cout << "open error" << std::endl;
      std::istreambuf_iterator<char> begin1(in);
@@ -187,11 +195,11 @@ TEST(Multithreaded, BuildEntireDFA) {
      StringPiece str1 = "6";
      //std::cout << "sdasdf" << std::endl;
      auto start = std::chrono::high_resolution_clock::now();
-            std::cout << match << std::endl;
-     //std::cout << RE2::GlobalReplace(&match, "", str1) << std::endl;
+     std::cout << match << std::endl;
+     //std::cout << RE2::GlobalReplace(&match, "host\\w{50}", str1) << std::endl;
      //std::cout << match.length() << "长度" << std::endl;
-     //std::cout << RE2::PartialMatch(match, "/Subject\\x3a\\x20[^\n]*\\x3fQ\\x3f[^\n]{512}/") << std::endl;
-     std::cout << RE2::FullMatch(match, ".*document\\.execCommand \\(\\s*[\x22\x27]InsertUnorderedList[\x22\x27]\\s*\\).*\x3B.{0,250}") << std::endl;
+     //std::cout << RE2::PartialMatch(match, "/ALTER\\s.*?FILE\\s+((AS|MEMBER|TO)\\s+)?(\\x27[^\\x27]{512}|\\x22[^\\x22]{512})/smi") << std::endl;
+     std::cout << RE2::FullMatch(match, ".*host\\w{50}") << std::endl;
      auto end = std::chrono::high_resolution_clock::now();
 
      // 以毫秒为单位，返回所用时间
@@ -208,7 +216,9 @@ TEST(Multithreaded, BuildEntireDFA) {
      //std::cout << match << std::endl;
 
      std::cout << "Thourghput:" << text_length/duration_s.count() << "b/s" << std::endl;
-     std::cout << text_length << std::endl;
+     std::cout << text_length << std::endl;*/
+     // end
+
     //std::cout << prog->BuildEntireDFA(Prog::kFullMatch, nullptr) << std::endl;;
     //std::cout << prog->DumpByteMap() << std::endl;
     //std::cout << prog->Dump() << std::endl;

@@ -427,7 +427,7 @@ DFA::DFA(Prog* prog, Prog::MatchKind kind, int64_t max_mem)
     init_failed_(false),
     q0_(NULL),
     q1_(NULL),
-    mem_budget_(100000000000) {
+    mem_budget_(8<<20) {
   if (ExtraDebug)
     fprintf(stderr, "\nkind %d\n%s\n", kind_, prog_->DumpUnanchored().c_str());
   int nmark = 0;
@@ -1407,7 +1407,7 @@ inline bool DFA::InlinedSearchLoop(SearchParams* params) {
     // int max = 0;
     // if (state_cache_.size() > max){
     //   max += 1000;
-       std::cout << state_cache_.size() << std::endl;
+       //std::cout << state_cache_.size() << std::endl;
     // }
       
     //std::cout << "match" << std::endl;

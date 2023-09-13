@@ -1,40 +1,11 @@
-Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/huangh/re2-main/cmake-build-debug/CMakeFiles/CMakeTmp
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
 
-Run Build Command(s):/usr/bin/make cmTC_3cbeb/fast && /usr/bin/make -f CMakeFiles/cmTC_3cbeb.dir/build.make CMakeFiles/cmTC_3cbeb.dir/build
-make[1]: Entering directory '/home/huangh/re2-main/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_3cbeb.dir/src.cxx.o
-/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_3cbeb.dir/src.cxx.o -c /home/huangh/re2-main/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_3cbeb
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3cbeb.dir/link.txt --verbose=1
-/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_3cbeb.dir/src.cxx.o  -o cmTC_3cbeb 
-/usr/bin/ld: CMakeFiles/cmTC_3cbeb.dir/src.cxx.o: in function `main':
-src.cxx:(.text+0x46): undefined reference to `pthread_create'
-/usr/bin/ld: src.cxx:(.text+0x52): undefined reference to `pthread_detach'
-/usr/bin/ld: src.cxx:(.text+0x63): undefined reference to `pthread_join'
-collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_3cbeb.dir/build.make:87: cmTC_3cbeb] Error 1
-make[1]: Leaving directory '/home/huangh/re2-main/cmake-build-debug/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_3cbeb/fast] Error 2
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
 
-
-Source file was:
-#include <pthread.h>
-
-void* test_func(void* data)
-{
-  return data;
-}
-
-int main(void)
-{
-  pthread_t thread;
-  pthread_create(&thread, NULL, test_func, NULL);
-  pthread_detach(thread);
-  pthread_join(thread, NULL);
-  pthread_atfork(NULL, NULL, NULL);
-  pthread_exit(NULL);
-
-  return 0;
-}
 
