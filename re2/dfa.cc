@@ -21,6 +21,7 @@
 //
 // See http://swtch.com/~rsc/regexp/ for a very bare-bones equivalent.
 
+#include <set>
 #include <iostream>
 #include <stddef.h>
 #include <stdint.h>
@@ -131,6 +132,27 @@ class DFA {
 
                         // one per input byte class
   };
+    std::vector<std::map<int, int>> CapList;
+    struct CapState {
+        inline bool IsMatch() const { return (flag_ & kFlagMatch) != 0; }
+
+        int* inst_;         // Instruction pointers in the state.
+        int ninst_;         // # of inst_ pointers.
+        uint32_t flag_;     // Empty string bitfield flags in effect on the way
+        // into this state, along with kFlagMatch if this
+        // is a matching state.
+
+// Work around the bug affecting flexible array members in GCC 6.x (for x >= 1).
+// (https://gcc.gnu.org/bugzilla/show_bug.cgi?id=70932)
+#if !defined(__clang__) && defined(__GNUC__) && __GNUC__ == 6 && __GNUC_MINOR__ >= 1
+        std::atomic<State*> next_[0];   // Outgoing arrows from State,
+#else
+        std::atomic<State*> next_[];    // Outgoing arrows from State,
+#endif
+
+        // one per input byte class
+    };
+    void BuildCapState(Prog::Inst* ip, int c);
 
   enum {
     kByteEndText = 256,         // imaginary byte at end of text
@@ -347,6 +369,8 @@ class DFA {
 
   DFA(const DFA&) = delete;
   DFA& operator=(const DFA&) = delete;
+
+    void BuildCapState(Prog::Inst *ip, int c, int pos);
 };
 
 // Shorthand for casting to uint8_t*.
@@ -427,7 +451,7 @@ DFA::DFA(Prog* prog, Prog::MatchKind kind, int64_t max_mem)
     init_failed_(false),
     q0_(NULL),
     q1_(NULL),
-    mem_budget_(8<<20) {
+    mem_budget_(8<<25) {
   if (ExtraDebug)
     fprintf(stderr, "\nkind %d\n%s\n", kind_, prog_->DumpUnanchored().c_str());
   int nmark = 0;
@@ -928,6 +952,11 @@ void DFA::RunWorkqOnEmptyString(Workq* oldq, Workq* newq, uint32_t flag) {
 // strings indicated by flag.  For example, c == 'a' and flag == kEmptyEndLine,
 // means to match c$.  Sets the bool *ismatch to true if the end of the
 // regular expression program has been reached (the regexp has matched).
+    void DFA::BuildCapState(Prog::Inst *ip, int c, int pos) {
+
+    }
+
+
 void DFA::RunWorkqOnByte(Workq* oldq, Workq* newq,
                          int c, uint32_t flag, bool* ismatch) {
   //mutex_.AssertHeld();
@@ -948,7 +977,10 @@ void DFA::RunWorkqOnByte(Workq* oldq, Workq* newq,
         break;
 
       case kInstFail:        // never succeeds
-      case kInstCapture:     // already followed
+      case kInstCapture:
+          if (ip->cap() % 2 == 0){
+
+          }
       case kInstNop:         // already followed
       case kInstAltMatch:    // already followed
       case kInstEmptyWidth:  // already followed
@@ -1403,19 +1435,23 @@ inline bool DFA::InlinedSearchLoop(SearchParams* params) {
     //
     // Okay to use bytemap[] not ByteMap() here, because
     // c is known to be an actual byte and not kByteEndText.
-    //std::cout << DumpState(s) << std::endl;
+    std::cout << state_cache_.size() << std::endl;
     // int max = 0;
     // if (state_cache_.size() > max){
     //   max += 1000;
-       //std::cout << state_cache_.size() << std::endl;
+    //   std::cout << s->ninst_ << std::endl;
     // }
-      
+//    if (state_cache_.size() > 1000)
+//        return false;
     //std::cout << "match" << std::endl;
     State* ns = s->next_[bytemap[c]].load(std::memory_order_acquire);
     if (ns == NULL) {
       count ++;
-      
+      auto start1 = std::chrono::high_resolution_clock::now();
       ns = RunStateOnByteUnlocked(s, c);
+      auto end = std::chrono::high_resolution_clock::now();
+      std::chrono::duration<double, std::ratio<1, 1000>> diff = end - start1;
+      //std::cout << "Time is " << diff.count() << " ms" << "  inst_num of DFA_state : " <<  s->ninst_ << '\n';
       if (ns == NULL) {
         // After we reset the cache, we hold cache_mutex exclusively,
         // so if resetp != NULL, it means we filled the DFA state

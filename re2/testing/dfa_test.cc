@@ -73,8 +73,19 @@ TEST(Multithreaded, BuildEntireDFA) {
   //s = "[abc]*b[ab]{10}";//[ab]*(ab){10}[ab]*
   //s = ".*<\\s*valitem[^>]*\\s(value|name)\\s*=\\s*([\\x22\\x27])[^\\x22\\x27]{104}";
   //s = "[qwertyuiopasdghjklzxcvbm]";
-  s = "(a*|(ab*)(ab*)(ab*)(ab*)(ab*)(ab*)a)*";
-  //s = "b[ab]{10}";
+  //s = "[akjp]*(a[kjp][kjp][kjp]|k[ajp][ajp][ajp]|j[akp][akp][akp][akp]|p[akj][akj][akj][akj])";
+  //s = "[\\p{Ll}\\p{Lu}\\p{Lt}\\p{Lo}\\p{Nd}\\p{Pc}\\p{Lm}]";
+  //s = "(hhfg(cghhfg){0,100}(cghhfg)*cg)*";
+//  s = "(a|b|c|d|e)*((d|e)(a|c|d|e)){10}";
+//  s = ".*[^\\p{L}\\p{Mn}\\p{Nd}\\p{Pc}][^a][^b][^c][^d][^e][^f][^g]$";
+//  s = "[^\\p{L}\\p{Mn}\\p{Nd}\\p{Pc}]\\P{Nd}";
+//  s = ".*[^\\p{L}\\p{Mn}\\p{Nd}\\p{Pc}]\\P{Nd}";
+//    s = ".*cc.*(cor.*ang.*|heart.*|icd.*|pace.*|coronary.*|cardi.*|aortic.*|lhc.*|.rhc.*|dual.*lead.*|cabg.*|trans.*echo.*)";
+    s = ".*cc.*(cor.*ang.*|heart.*|icd.*|pace.*|cardi.*|aortic.*|lhc.*|.rhc.*|dual.*lead.*|cabg.*|trans.*echo.*) ";
+//    s = "^(\\w\\d){5}$";
+  //s = "(a|b|c|d|e)*((a|b)(a|b|c|d)){}";
+  //s = "[\\x00-\\x7F]*([\\x00-\\x2F\\x3A-\\x40\\x5B\\x5C\\x5D\\x5E\\x60\\x7B-\\x7F][\\x00-\\x2F\\x3A-\\x7F]){5}";
+
   //s = "%[^\x0d\x0a]{1000}";
   std::cout << s << std::endl;
   Regexp* re = re2::Regexp::Parse(s, Regexp::LikePerl, NULL);
@@ -86,103 +97,8 @@ TEST(Multithreaded, BuildEntireDFA) {
     Prog* prog = re->CompileToProg(0);
     ASSERT_TRUE(prog != NULL);
     std::cout << "NFA" << std::endl;
-    //std::cout << prog->DumpByteMap() << std::endl;
-    int n = 10;
-    std::ifstream outfile;
-    std::string line;
-    char ch, ch1;
-    struct dirent *ptr;
-    DIR *dir;
-    std::string PATH = "/home/huangh/PureEvilTxTGen/attack_PureEvil100000above20_text/Redos_list";
-    dir=opendir(PATH.c_str());
-    std::vector<std::string> files;
-    std::cout << "文件列表: "<< std::endl;
-    while((ptr=readdir(dir))!=NULL)
-    {
-        if(ptr->d_name[0] == '.')
-            continue;
-        files.push_back(ptr->d_name);
-    }
-    closedir(dir);
-    std::ofstream result;
-    result.open("/home/huangh/PureEvilTxTGen/result/snort_in_re2_0911.txt");
-    int above10s = 0, above5s = 0, above1s = 0, above20s = 0, regex_nun = 0, above50s = 0, above80s = 0, above100s = 0;
-    for (auto& i : files) {
-      std::ifstream in_regex("/home/huangh/PureEvilTxTGen/attack_PureEvil100000above20_text/Redos_list/" + i);
-      if (!in_regex)
-        std::cout << "open error" << std::endl;
-      std::string regex_text;
-      std::string regex_name;
-      getline(in_regex, regex_name);
-      getline(in_regex, regex_text);
-      in_regex.close();
-      std::ifstream in(regex_text);
-      std::istreambuf_iterator<char> begin1(in);
-      std::istreambuf_iterator<char> end1;
-      std::string match(begin1, end1);
-      unsigned long text_length = match.length();
-      StringPiece str1 = "6";
-      //std::cout << "sdasdf" << std::endl;
-
-      std::cout << regex_name << std::endl;
-      result << regex_name << '\n';
-      auto start = std::chrono::high_resolution_clock::now();
-      std::cout << RE2::GlobalReplace(&match, regex_name, str1) << std::endl;
-      auto end = std::chrono::high_resolution_clock::now();
-
-      // 以毫秒为单位，返回所用时间
-      std::cout << "in millisecond time:";
-      result << "in millisecond time:";
-      std::chrono::duration<double, std::ratio<1, 1000>> diff = end - start;
-      std::cout << "Time is " << diff.count() << " ms\n";
-      result << "Time is " << diff.count() << " ms\n";
-
-    
-      std::cout<<"in seconds time:";
-      result << "in seconds time:";
-      std::chrono::duration<double,std::ratio<1,1>> duration_s(end-start);
-      std::cout<<duration_s.count()<<" seconds"<<std::endl;
-      result << duration_s.count()<<" seconds\n";
-      if (duration_s.count() >= 1){
-          if (duration_s.count() >= 5){
-              if (duration_s.count() >= 10){
-                  if (duration_s.count() >= 20){
-                      if (duration_s.count() >= 50)
-                          if (duration_s.count() >= 80){
-                              if (duration_s.count() >= 100)
-                                  above100s++;
-                              else
-                                above80s++;
-                          } else
-                            above50s++;
-                      else
-                        above20s++;
-                  } else
-                      above10s++;
-              } else
-                  above5s++;
-          } else
-              above1s++;
-      }
-      regex_nun++;
-      //std::cout << match << std::endl;
-      std::cout << "Thourghput:" << text_length/duration_s.count() << "B/s" << std::endl;
-      result << "Thourghput:" << text_length/duration_s.count() << "B/s\n";
-      std::cout << text_length << std::endl;
-      result << "attack text length: " << text_length << "B" << "\n\n";
-      //std::cout << match.length() << "长度" << std::endl;
-    }
-    std::cout << "higher than 1s lower than 5s : " << above1s << std::endl;
-    std::cout << "higher than 5s lower than 10s : " << above5s << std::endl;
-    std::cout << "higher than 10s lower than 20s : " << above10s << std::endl;
-    std::cout << "higher than 20s lower than 50s: " << above20s << std::endl;
-    std::cout << "higher than 50s lower than 80s: " << above50s << std::endl;
-    std::cout << "higher than 80s lower than 100s: " << above80s << std::endl;
-    std::cout << "higher than 100s: " << above100s << std::endl;
-    std::cout << "regex num : " << regex_nun << std::endl;
-    result.close();
-//begin
-	  /* std::ifstream in("/Users/huanghong/Desktop/git/output.txt");
+    std::ifstream in("/Users/huanghong/Documents/GadgetCA_above20_SingleStr_T/1.txt");
+//    std::ifstream in("/Users/huanghong/Documents/experiment_data/3.txt");
      if (!in)
        std::cout << "open error" << std::endl;
      std::istreambuf_iterator<char> begin1(in);
@@ -190,16 +106,16 @@ TEST(Multithreaded, BuildEntireDFA) {
      std::string match(begin1, end1);
      unsigned long text_length = match.length();
      //getline(outfile, match);
-     //match = "hostnameahostnameahostnamehostnamehostnameaaahostnameaahostnamehostnameahostnameaaaahostnamehostnamehostnamehostnameahostnamehostnameaabahostname";
-
      StringPiece str1 = "6";
      //std::cout << "sdasdf" << std::endl;
      auto start = std::chrono::high_resolution_clock::now();
-     std::cout << match << std::endl;
-     //std::cout << RE2::GlobalReplace(&match, "host\\w{50}", str1) << std::endl;
+//     std::cout << match << std::endl;
+     std::cout << RE2::PartialMatch(match, "t[\\d|\\w]{32") << std::endl;
      //std::cout << match.length() << "长度" << std::endl;
-     //std::cout << RE2::PartialMatch(match, "/ALTER\\s.*?FILE\\s+((AS|MEMBER|TO)\\s+)?(\\x27[^\\x27]{512}|\\x22[^\\x22]{512})/smi") << std::endl;
-     std::cout << RE2::FullMatch(match, ".*host\\w{50}") << std::endl;
+//     RE2::FullMatch(match, "(\\\\n)+(.{0,80}(\\\\n)){4,}");
+//     match = "aaaaaaaaaaaaaab";
+//     std::cout << RE2::PartialMatch(match, "\\d*((\\d[^\\\\p{L}\\\\p{Mn}\\\\p{Nd}\\\\p{Pc}]){10}\\d)*213412") << std::endl;
+//     std::cout << RE2::GlobalReplace(&match, "(\\\\n)+(.{0,80}(\\\\n)){4,} ", str1) << std::endl;
      auto end = std::chrono::high_resolution_clock::now();
 
      // 以毫秒为单位，返回所用时间
@@ -207,7 +123,7 @@ TEST(Multithreaded, BuildEntireDFA) {
      std::chrono::duration<double, std::ratio<1, 1000>> diff = end - start;
      std::cout << "Time is " << diff.count() << " ms\n";
 
-    
+
 
 
      std::cout<<"in seconds time:";
@@ -216,9 +132,9 @@ TEST(Multithreaded, BuildEntireDFA) {
      //std::cout << match << std::endl;
 
      std::cout << "Thourghput:" << text_length/duration_s.count() << "b/s" << std::endl;
-     std::cout << text_length << std::endl;*/
+     std::cout << text_length << std::endl;
      // end
-
+    //std::cout << s << std::endl;
     //std::cout << prog->BuildEntireDFA(Prog::kFullMatch, nullptr) << std::endl;;
     //std::cout << prog->DumpByteMap() << std::endl;
     //std::cout << prog->Dump() << std::endl;
@@ -233,8 +149,9 @@ TEST(Multithreaded, BuildEntireDFA) {
     //std::cout << re->nsub_ << std::endl;
     //std::thread t(DoBuild, prog);
     //t.join();
-    //std::cout << "state of DFA" << std::endl;
-    //std::cout << prog->BuildEntireDFA(Prog::kFirstMatch, nullptr) << std::endl;;
+    std::cout << "state of DFA" << std::endl;
+//    std::cout << prog->BuildEntireDFA(Prog::kFullMatch, nullptr) << std::endl;
+    //std::cout << prog->Dump() << std::endl;
     exit(100);
     delete prog;
   }
